@@ -1,0 +1,13 @@
+# Ignore dependencies and cache
+node_modules/
+**/node_modules/
+.cache/
+**/.cache/
+
+# Build and logs
+build/
+dist/
+*.log
+
+# Environment files
+.env*

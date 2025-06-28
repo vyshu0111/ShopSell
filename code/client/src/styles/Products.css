@@ -1,0 +1,130 @@
+.products-container {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #f9fafb;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Filters Sidebar */
+.products-filter {
+  width: 250px;
+  background: #d8e2f5;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.products-filter h4 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+.sub-filter-body {
+  margin-top: 10px;
+}
+
+.form-check {
+  margin: 10px 0;
+}
+
+.form-check-label {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Main Product Section */
+.products-body {
+  flex: 1;
+}
+
+.products-body h3 {
+  font-size: 26px;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  border-left: 5px solid #3498db;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+/* Product Card */
+.product-item {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background: #f4f6f8;
+}
+
+.product-data {
+  padding: 1rem;
+}
+
+.product-data h6 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.product-data p {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.product-data h5 {
+  font-size: 16px;
+  color: #27ae60;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.product-data h5 s {
+  color: #bdc3c7;
+  font-size: 14px;
+}
+
+.product-data h5 p {
+  margin: 0;
+  font-size: 13px;
+  color: #e67e22;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .products-container {
+    flex-direction: column;
+  }
+
+  .products-filter {
+    width: 100%;
+  }
+
+  .products {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}

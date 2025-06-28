@@ -1,0 +1,126 @@
+.all-orders-page {
+  padding: 9rem;
+  background-color: #f4f7fb;
+  min-height: 100vh;
+}
+
+.all-orders-page h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.all-orders {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.all-orders-order {
+  background-color: #ebeef4;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.all-orders-order:hover {
+  transform: translateY(-4px);
+}
+
+.all-orders-order img {
+  width: 160px;
+  height: 160px;
+  object-fit:cover;
+  border-radius: 12px;
+  border: 2px solid #eee;
+  border: #111;
+}
+
+.all-orders-order-data {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.all-orders-order-data h4 {
+  color: #111;
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.all-orders-order-data p {
+  margin: 0;
+  color: #444;
+  font-size: 0.96rem;
+}
+
+.all-orders-order-data span {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.all-orders-order-data h5 {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  color: #2c3e50;
+}
+
+#flotingSelect-allOrders {
+  width: 220px;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+  margin: 0.4rem 0.5rem 0 0;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #4e89ff;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #346ad8;
+}
+
+.btn-danger {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #d9363b;
+}
+
+@media (max-width: 768px) {
+  .all-orders-order {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .all-orders-order img {
+    width: 100%;
+    height: auto;
+  }
+
+  #flotingSelect-allOrders {
+    width: 100%;
+  }
+}

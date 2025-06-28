@@ -1,0 +1,89 @@
+.admin-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 12rem;
+  background: #f7f9fc;
+  min-height: 100vh;
+}
+
+.admin-home-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 6px solid #4e89ff;
+}
+
+.admin-home-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.admin-home-card h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.admin-home-card p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4e89ff;
+  margin: 0.5rem 0 1rem;
+}
+
+.admin-home-card button {
+  background-color: #4e89ff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-home-card button:hover {
+  background-color: #3064d1;
+}
+
+/* Banner Update Box */
+.admin-banner-input {
+  background: #fff4e0;
+  border-left: 6px solid #f0a500;
+}
+
+.admin-banner-input h5 {
+  color: #b57200;
+}
+
+.admin-banner-input .form-floating {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.admin-banner-input input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #f0a500;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.admin-banner-input input:focus {
+  outline: none;
+  border-color: #ffb800;
+  box-shadow: 0 0 5px #ffb80055;
+}
+
+.admin-banner-input button {
+  background-color: #f0a500;
+}
+
+.admin-banner-input button:hover {
+  background-color: #d89200;
+}

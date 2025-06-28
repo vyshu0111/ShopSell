@@ -1,0 +1,123 @@
+.new-product-page {
+  padding: 10rem;
+  background-color: #f9fbff;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.new-product-container {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+.new-product-container h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.new-product-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.new-product-body span,
+.new-product-body section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.span-21,
+.span-22,
+.span-3 {
+  flex: 1 1 100%;
+}
+
+.form-floating input,
+.form-floating select {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500px;
+  transition: border-color 0.3s ease;
+}
+
+.form-floating input:focus,
+.form-floating select:focus {
+  border-color: #4e89ff;
+  box-shadow: none;
+}
+
+.form-floating label {
+  color: #afaeae;
+  font-size: large;
+  
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: 1.5rem;
+}
+
+.form-check-input {
+  cursor: pointer;
+}
+
+.form-check-label {
+  font-size: 1rem;
+  color: #444;
+  cursor: pointer;
+}
+
+section h4 {
+  width: 100%;
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.3rem;
+}
+
+.btn-primary {
+  background-color: #4e89ff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #356fe0;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .new-product-container {
+    padding: 1.5rem;
+  }
+
+  .new-product-body span,
+  .new-product-body section {
+    flex-direction: column;
+  }
+
+  .span-21,
+  .span-22,
+  .span-3 {
+    flex: 1 1 100%;
+  }
+}
