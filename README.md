@@ -4,12 +4,6 @@
 
 **Project Title:** ShopEZ - One-Stop Shop for Online Purchases  
 
-**Team Members:**  
-- Ch. Vyshnavi  
-- G. Naveen  
-- A. Ganesh  
-- D. Vijay Kumar
-
 ---
 
 ## 2. Project Overview
